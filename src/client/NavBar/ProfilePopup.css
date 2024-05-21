@@ -1,0 +1,88 @@
+/* ProfilePopup.css */
+.button1 {
+    /* position: fixed; */
+    /* position: absolute;  */
+    display: block;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 70px;
+    right: 45px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer; 
+    margin-top: 3px;
+    margin-right: 5vw;
+    position: static;
+  }
+
+  .conten{
+    display: inline-flex;
+    position:absolute;
+    flex-direction: row;
+
+  }
+  
+  .popup {
+    /* display: block; */
+    /* Styles pour la boîte de pop-up */
+    
+    /* position: fixed; */
+    position: relative; 
+    /* position: sticky; */
+    /* top: 100px; */
+    margin-top: 80px;
+    /* right: -9vw; */
+    margin-left: -7vw;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .popup {
+    cursor: pointer;
+    color: black;
+    position: sticky;
+    /* margin-top: 200px; */
+    
+  } 
+  .logout-popup{
+    position: fixed;
+    margin-top: 250px;
+    margin-left: -47vw;
+    width: 25vw; 
+    height: 15vh;
+    background-color:cornflowerblue;
+    border-radius: 16px;
+    z-index: 1000;
+  } 
+  .logout-popup button{
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .popup {
+      /* Styles pour la boîte de pop-up */
+      position: fixed;
+      top: 86%;
+      right: 30%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .logout-popup{
+      position: relative;
+      margin-top: -260px;
+      margin-left: -88vw;
+      width: 25vw;
+      height: 30vh;
+      background-color:cornflowerblue;
+      border-radius: 16px;
+      
+    } 
+
+  }
+  

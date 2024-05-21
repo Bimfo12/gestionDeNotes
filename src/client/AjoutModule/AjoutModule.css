@@ -1,0 +1,107 @@
+body{
+  margin: 0px;
+  /* background-image: url(../../img/bgbbc.jpg); */
+  background-size: cover;
+  width: 100vw;
+  height: 140vh;
+}
+.contenaireaj{
+  margin: 0px;
+  /* background-image: url(../../img/bgbbc.jpg); */  
+  background-size: cover;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid white; */
+  flex-direction: column;
+  
+}
+
+
+.persone{
+
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+    margin-top: 20vh;
+    background-color: #9c8d75;
+    width: 20vw;
+    border-radius: 100px;
+    
+}
+
+label{
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+}
+.button2{
+    background-color: #d38a1c;
+    color: #fff;
+    font-size: 17px;
+    font-family: calibri;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* Appliquez ces styles à l'élément <select> */
+select {
+    width: 250px; /* Largeur personnalisée */
+    padding: 10px; /* Marge interne personnalisée */
+    border: 1px solid #ccc; /* Bordure personnalisée */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #f4f4f4; /* Couleur de fond */ 
+    font-size: 16px; /* Taille de police personnalisée */
+    color: #333; /* Couleur du texte */
+    
+  }
+  
+  /* Appliquez ces styles aux éléments <option> */
+  select option {
+    background-color: #fff; /* Couleur de fond des options */
+    color: #333; /* Couleur du texte des options */
+    font-size: 16px; /* Taille de police des options */
+    padding: 3px 10px; /* Marge interne des options */
+  }
+  
+  /* Styles pour l'option sélectionnée */
+  select option:checked {
+    background-color: #007bff; /* Couleur de fond de l'option sélectionnée */
+    color: #fff; /* Couleur du texte de l'option sélectionnée */
+  }
+  /* Appliquez ces styles à l'élément <input> */
+  .matière {
+    width: 250px; /* Largeur personnalisée */
+    padding: 10px; /* Marge interne personnalisée */
+    border: 1px solid #ccc; /* Bordure personnalisée */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de police personnalisée */
+    color: #333; /* Couleur du texte */
+  }
+  
+  /* Styles pour l'élément <label> */
+  label {
+    font-weight: bold; /* Texte en gras */
+    margin-bottom: 3px; /* Marge inférieure pour séparer le label de l'input */
+    display: block; /* Pour forcer le label à occuper une ligne entière */
+  }
+
+  .for{
+    margin-top: -120px;
+    background-color: rgb(62, 76, 133);
+    width: 30vw;
+    height: 580px;
+    border-radius: 10px;
+  }
+ 
+
+  
+  
+  

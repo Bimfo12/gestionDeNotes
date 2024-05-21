@@ -1,0 +1,56 @@
+/* APropos.css */
+
+/* Style pour le conteneur principal */
+.apropos-container {
+    position: absolute;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 300px;
+    margin-top: 100px;
+    backdrop-filter: blur(15px); 
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    /* background-color: rgb(62, 76, 133); */
+  }
+
+  /* Style pour le titre */
+  .apropos-container h1 {
+    font-size: 30px;
+    /* color: #333; */
+    margin-bottom: 20px;
+  }
+
+  /* Style pour les paragraphes de texte */
+  .apropos-container p {
+    font-size: 20px;
+    /* color: rgb(248, 248, 248); */
+    line-height: 1.5;
+  }
+
+  /* Style pour la liste à puces */
+  .apropos-container ul {
+    list-style: disc;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  /* Style pour les éléments de liste */
+  .apropos-container li {
+    font-size: 20px;
+    /* color: rgb(252, 249, 249); */
+  }
+
+
+  /* .bar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  } */
+
+  /* Style pour les liens au survol */
+ .bar a:hover {
+    text-decoration: underline;
+   
+  }

@@ -1,0 +1,36 @@
+.containt{ 
+    /* background-image: url(../../img/bgbbc.jpg); */
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list_user{
+    display: flex;
+    width: 25vw;
+    height: 92vh;
+    /* border: 2px solid white; */
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px 6px;
+}
+.note_publier{
+    display: flex;
+    width: 60vw;
+    height: 92vh;
+    margin-left: 3vw;
+    /* border: 2px solid white;   */
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px 6px;
+}
+.table{
+    width: 50vw;
+    margin-left: 4vw;
+}
+/* .bar{
+    width: 100vw;
+    position: fixed;
+} */

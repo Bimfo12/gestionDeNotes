@@ -1,0 +1,66 @@
+digraph G {
+  graph [ ratio = "auto", page = "100", compound =true, bgcolor = "#2e3e56" ];
+  node [ style = "filled", fillcolor = "#edad56", color = "#edad56", penwidth =3 ];
+  edge [ color = "#fcfcfc", penwidth =2, fontname = "helvetica Neue Ultra Light" ];
+subgraph "clusterGestionDeNotes" {
+  graph [ label = "GestionDeNotes", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "GestionDeNotes.onlyOwnerOrAuthorized" [ label = "onlyOwnerOrAuthorized", color = "#1bc6a6", shape =doubleoctagon ];
+  "GestionDeNotes.onlyRegisteredUser" [ label = "onlyRegisteredUser", color = "#1bc6a6", shape =doubleoctagon ];
+  "GestionDeNotes.creerIdentifiant" [ label = "creerIdentifiant", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.sInscrire" [ label = "sInscrire", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.setPersonalInfo" [ label = "setPersonalInfo", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.getPersonalInfo" [ label = "getPersonalInfo", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.seConnecter" [ label = "seConnecter", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.estProfesseur" [ label = "estProfesseur", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.estInscrit" [ label = "estInscrit", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.ajouterNote" [ label = "ajouterNote", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.mettreAJourNote" [ label = "mettreAJourNote", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.supprimerNote" [ label = "supprimerNote", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.obtenirNote" [ label = "obtenirNote", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.getNoteIdsForUser" [ label = "getNoteIdsForUser", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.ajouterProfesseur" [ label = "ajouterProfesseur", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.obtenirProfesseur" [ label = "obtenirProfesseur", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.getAllPersonalInfo" [ label = "getAllPersonalInfo", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.getAllProfesseursNames" [ label = "getAllProfesseursNames", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.generateRandomToken" [ label = "generateRandomToken" ];
+  "GestionDeNotes.bytes32ToString" [ label = "bytes32ToString" ];
+  "GestionDeNotes.getAuthToken" [ label = "getAuthToken", color = "#FF9797", fillcolor = "#FF9797" ];
+  "GestionDeNotes.uploadImage" [ label = "uploadImage", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "GestionDeNotes.getUserProfile" [ label = "getUserProfile", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "GestionDeNotes.displayUserProfile" [ label = "displayUserProfile", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+}
+
+  "GestionDeNotes.seConnecter";
+  "GestionDeNotes.generateRandomToken";
+  "GestionDeNotes.bytes32ToString";
+  "GestionDeNotes.seConnecter" -> "GestionDeNotes.generateRandomToken" [ color = "#1bc6a6" ];
+  "GestionDeNotes.seConnecter" -> "GestionDeNotes.bytes32ToString" [ color = "#1bc6a6" ];
+  "GestionDeNotes.generateRandomToken" -> "GestionDeNotes.bytes32ToString" [ color = "#1bc6a6" ];
+
+
+rankdir=LR
+node [shape=plaintext]
+subgraph cluster_01 { 
+label = "Legend";
+key [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+  <tr><td align="right" port="i1">Internal Call</td></tr>
+  <tr><td align="right" port="i2">External Call</td></tr>
+  <tr><td align="right" port="i3">Defined Contract</td></tr>
+  <tr><td align="right" port="i4">Undefined Contract</td></tr>
+  </table>>]
+key2 [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+  <tr><td port="i1">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i2">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i3" bgcolor="#445773">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i4">
+    <table border="1" cellborder="0" cellspacing="0" cellpadding="7" color="#e8726d">
+      <tr>
+       <td></td>
+      </tr>
+     </table>
+  </td></tr>
+  </table>>]
+key:i1:e -> key2:i1:w [color="#1bc6a6"]
+key:i2:e -> key2:i2:w [color="white"]
+}
+}

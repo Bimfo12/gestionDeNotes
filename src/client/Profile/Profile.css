@@ -1,0 +1,222 @@
+body{
+    margin: 0px;
+    /* background-image: url(../../img/bgbbc.jpg); */
+    /* background: #669bbc; */
+    /* background: rgb(62, 76, 133); */
+    /* background: rgb(114, 125, 187); */
+    /* background: rgb(169, 178, 243); */
+
+    /* background: var(--body_background); 
+     background: linear-gradient(to right, rgb(62, 76, 133), rgb(114, 125, 187),#669bbc); */
+    backdrop-filter: blur(60px);
+
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: right;
+}
+.contenaire{
+    margin: 0px;
+    /* background-image: url(../../img/bgbbc.jpg); */
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+    flex-direction: column;
+    background-position: right;
+}
+/* Navbar{
+    width: 100vw;
+    position: fixed;
+    z-index: 666;
+}  */
+
+.sary{
+    height: 300px;
+    width: 60%;
+    border-radius: 10%;
+
+}
+.modif{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.saryprofile{
+    margin-top: -100px;
+    height: 14vw;
+    width: 14vw;
+    border-radius: 50%;
+}
+/* .sarycoms{
+    margin-top: -100px;
+    height: 3.5vw;
+    width: 3.5vw;
+    border-radius: 50%;
+
+} */
+.divsary{
+  flex: content; 
+  justify-items: flex-start;
+  margin-left: -27vw;
+}
+/* .infocoms{
+  height: 50px;
+  width: 22vw;
+  background-color: rgb(216, 219, 221);
+  border-radius: 20px 0px 20px 0px;
+  margin-top: -64px;
+  margin-left: 45px;
+} */
+.tableau{
+    display: flex;
+    width: 60vw;
+    height: 30px;
+    /* color: white; */
+    padding: 2px;
+    margin-top: 5px;
+    border-radius: 20px;
+    /* background-color: rgb(0, 33, 65); */
+
+}
+.tableau p{
+    margin-left: 16%;
+
+}
+.ajoutNote{
+    color: black;
+}
+
+table {
+
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60vw;
+  /* border: 2px solid white; */
+   backdrop-filter: blur(15px);
+}
+
+td, th {
+  /* border: 1px solid whitesmoke; */
+  text-align: left;
+  padding: 8px;
+  /* color: white; */
+}
+
+.titre{
+    text-align: end;
+}
+.rampisageinfo{
+    color: white;
+}
+
+.supnote {
+    backdrop-filter: blur(20px);
+}
+.supnote button{
+    cursor: pointer;
+}
+.supnote label{
+   color: rgb(231, 55, 55);
+   font-size: 20px;
+
+}
+
+.affichagedata {
+    position: absolute;
+    left: 50%; /* Déplace le point de départ à 50% de la largeur du parent */
+    transform: translateX(-50%); /* Centre horizontalement le contenu par rapport au point de départ */
+  }
+
+/* Ajoutez ces styles CSS dans votre fichier CSS ou dans une balise <style> */
+.custom-modal {
+    position: fixed;
+    top: 50vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(62, 76, 133);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    max-width: 500px;
+    max-height: 400px;
+    /* height: 100%;
+    width: 100%; */
+    text-align: center;
+  }
+
+  .custom-modal h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .custom-modal p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #fff;
+  }
+
+  .custom-modal form {
+    margin-top: 20px;
+  }
+
+  .custom-modal label {
+    font-size: 16px;
+  }
+
+  .custom-modal input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .custom-modal button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .custom-modal button:last-child {
+    background-color: #ccc;
+    color: #000;
+  }
+
+  /* Style pour les boutons */
+  .custom-modal button:hover {
+    background-color: #0056b3;
+  }
+
+  .custom-modal button:last-child:hover {
+    background-color: #999;
+  }
+  .boutonnete{
+    cursor: pointer;
+    background-color: #b6d0ec;
+  }
+  h2{
+    color: #fff;
+  }
+  /* Styles pour le bouton cliqué */
+.active {
+ /* background-color: #007bff;  Couleur de fond pour le bouton cliqué */
+  background-color: #6C68FF;  
+  color: #fff;
+}
+
+.dropdown{
+  margin-right: 50px;
+}
+
+.load{
+  margin-top: 40vh;
+}
